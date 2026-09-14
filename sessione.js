@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const contenitore = document.getElementById("contenuto-dettaglio");
 
   try {
-    const risposta = await fetch("data/sessions.json");
+    const risposta = await fetch("sessions.json");
     const sessioni = await risposta.json();
     const sessione = sessioni.find(s => s.id === idRichiesto);
 
@@ -66,6 +66,14 @@ function mostraDettaglio(contenitore, sessione) {
   const percentualeGhost = totale > 0 ? (sessione.aerei_ghost / totale) * 100 : 0;
   const percentualeMainstream = totale > 0 ? (sessione.aerei_mainstream / totale) * 100 : 0;
 
+  // Se l'email di contatto non e' stata impostata in config.js, mostriamo
+  // un testo semplice invece di un link "mailto" rotto.
+  const rigaRichiestaVideo = email
+    ? `Per richiedere la registrazione video completa della sessione, scrivi a
+       <a href="mailto:${email}">${email}</a>`
+    : `Per richiedere la registrazione video completa della sessione, scrivi a:
+       <strong>Email non presente</strong>`;
+
   const blocco = document.createElement("div");
   blocco.innerHTML = `
     <h2>${sessione.titolo}</h2>
@@ -103,8 +111,14 @@ function mostraDettaglio(contenitore, sessione) {
     <img class="snapshot-grande" src="${sessione.snapshot}" alt="Snapshot ${sessione.titolo}">
 
     <div class="richiesta-video">
-      Per richiedere il video completo della sessione, invia una email a
-      <a href="mailto:${email}">${email}</a>
+      ${rigaRichiestaVideo}
+      <div class="avviso-privacy">
+        ⚠️ Attenzione: le registrazioni video delle sessioni possono contenere
+        dati sensibili (es. inquadrature dell'ambiente circostante, orari
+        precisi di presenza, dettagli riconoscibili della zona). Valuta con
+        attenzione cosa condividi, e con chi, prima di inviare un video
+        richiesto via email.
+      </div>
     </div>
   `;
   contenitore.appendChild(blocco);
