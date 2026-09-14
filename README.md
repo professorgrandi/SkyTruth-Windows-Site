@@ -80,16 +80,25 @@ const SKYTRUTH_CONFIG = {
   titoloSito: "SkyTruth",
   sottotitolo: "Sessioni di rilevazione pubbliche",
   nomeUtenteGitHub: "tuo-nome-utente",   // <-- lo aggiorna anche SkyTruth da solo
-  emailContatto: "tuaemail@protonmail.com",
-  indirizzoMonero: "il-tuo-indirizzo-XMR-se-vuoi-ricevere-donazioni",
+  emailContatto: "tuaemail@protonmail.com",   // <-- oppure "" se non vuoi impostarla
+  indirizzoMonero: "45QW5EeHKzjFhwhhjB6byJdSXd7ZUR4FgELHGz1e4Mt5M3Yt6TSiXzaEHdcEeneWVX3FtCpdvt4toge3aqCvrihf38SSVGv",
   sessioniPerPagina: 15,
   colonneGriglia: 3
 };
 ```
 
 - **`nomeUtenteGitHub`**: usato per costruire automaticamente il titolo del sito ("SkyTruth tuo-nome-utente") e il link al repository del programma principale. **Viene aggiornato automaticamente** da SkyTruth stesso la prima volta che carichi una sessione dal programma — non è strettamente necessario modificarlo a mano, ma puoi farlo comunque se preferisci impostarlo subito
-- **`emailContatto`**: mostrata in testa al sito e nella pagina di dettaglio di ogni sessione ("per richiedere il video completo, scrivi a...")
-- **`indirizzoMonero`**: mostrato in fondo alla pagina, per eventuali donazioni volontarie
+
+- **`emailContatto`**: personalizzala con la tua email. **Dove diventa visibile online:**
+  - In testa al sito, come link cliccabile ("Contatta via ProtonMail")
+  - In **ogni pagina di dettaglio sessione**, con la dicitura: *"Per richiedere la registrazione video completa della sessione, scrivi a: [la tua email]"*
+
+  Se lasci questo campo **vuoto** (`""`), sulla pagina di dettaglio comparirà automaticamente **"Email non presente"** al posto del link, senza generare errori.
+
+  ⚠️ **Nota importante**: sotto quella dicitura, il sito mostra sempre anche un avviso automatico che ricorda che le registrazioni video possono contenere dati sensibili (inquadrature dell'ambiente, orari di presenza, dettagli riconoscibili della zona) — valuta sempre attentamente cosa condividi e con chi, prima di inviare un video a chi te lo richiede via email.
+
+- **`indirizzoMonero`**: ⚠️ **questo campo NON è pensato per essere personalizzato**. È l'indirizzo dell'autore originale del progetto SkyTruth, e resta invariato in ogni copia/fork del sito — così chiunque usi il progetto (in qualunque sua copia pubblicata) può comunque scegliere di sostenere lo sviluppo originale. Ti chiediamo di lasciarlo così com'è, per rispetto verso chi ha reso disponibile gratuitamente questo progetto
+
 - **`sessioniPerPagina`** e **`colonneGriglia`**: di norma non serve cambiarli, ma puoi farlo se vuoi una griglia diversa (es. 2 colonne x 10 righe)
 
 ---
@@ -144,6 +153,8 @@ Il sito pubblica **solo**:
 - Data e ora della sessione
 - Conteggio numerico degli aerei rilevati (ghost e mainstream)
 - Uno snapshot della **sola finestra webcam** (il cielo, non l'intero schermo)
+
+Se qualcuno richiede via email la registrazione video completa di una sessione, ricorda che quei filmati **possono contenere dati sensibili** (inquadrature dell'ambiente circostante, orari precisi di presenza, dettagli riconoscibili della zona) — il sito mostra sempre un avviso in tal senso nella pagina di ogni sessione, ma la responsabilità di cosa condividere, e con chi, resta comunque tua.
 
 Se vuoi rivedere/eliminare una sessione già pubblicata, puoi modificare o cancellare manualmente la voce corrispondente in `sessions.json` (e l'immagine in `snapshots/`) direttamente da GitHub.
 
@@ -219,7 +230,7 @@ Sviluppato da **Professor Grandi (Mahatma)** & **Claude Sonnet 5** (Anthropic), 
 
 ## Donazioni
 
-Se questo progetto ti è stato utile, puoi supportarne lo sviluppo con una donazione volontaria in Monero (XMR):
+Se questo progetto ti è stato utile, puoi supportarne lo sviluppo con una donazione volontaria in Monero (XMR). Questo è l'indirizzo dell'**autore originale** del progetto: resta lo stesso in fondo ad ogni copia/fork di questo sito, così chiunque usi SkyTruth (in qualunque sua versione pubblicata) può comunque scegliere di sostenere chi lo ha creato:
 
 ```
 45QW5EeHKzjFhwhhjB6byJdSXd7ZUR4FgELHGz1e4Mt5M3Yt6TSiXzaEHdcEeneWVX3FtCpdvt4toge3aqCvrihf38SSVGv
