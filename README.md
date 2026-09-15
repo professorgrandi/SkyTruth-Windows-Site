@@ -59,10 +59,11 @@ Il sito mostra, per ogni sessione:
 ## Installazione e pubblicazione
 
 1. **Crea un tuo repository pubblico** su GitHub, chiamato **esattamente** `SkyTruth-Windows-Site` (il nome deve essere identico: è quello che il programma SkyTruth cerca automaticamente quando pubblichi una sessione)
-2. **Copia dentro tutti i file** di questo repository (puoi scaricarli da `Code` → `Download ZIP`, oppure fare un "Fork" di questo stesso repository)
-3. Vai su **Settings** del tuo nuovo repository → **Pages** (nel menu a sinistra)
-4. In **"Source"**, seleziona il branch **`main`** e la cartella **`/ (root)`**, poi **Save**
-5. Dopo qualche minuto, il tuo sito sarà online all'indirizzo:
+2. **Scarica il template pulito** dalla sezione [Releases](https://github.com/professorgrandi/SkyTruth-Windows-Site/releases/latest) di questo repository (file `SkyTruth-Windows-Site-Template.zip`) — contiene solo il codice, **senza nessuna sessione precaricata**. *(Non usare "Code → Download ZIP": scaricherebbe anche le sessioni reali eventualmente già pubblicate su questo repository.)*
+3. Estrai il contenuto dello zip ed caricalo nel tuo nuovo repository
+4. Vai su **Settings** del tuo nuovo repository → **Pages** (nel menu a sinistra)
+5. In **"Source"**, seleziona il branch **`main`** e la cartella **`/ (root)`**, poi **Save**
+6. Dopo qualche minuto, il tuo sito sarà online all'indirizzo:
    ```
    https://<tuo-nome-utente>.github.io/SkyTruth-Windows-Site/
    ```
