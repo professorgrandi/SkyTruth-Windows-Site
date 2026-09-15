@@ -70,6 +70,8 @@ Il sito mostra, per ogni sessione:
 
 Non serve nessun altro passaggio tecnico: GitHub Pages si occupa di tutto il resto automaticamente.
 
+> 🎨 **Vuoi vedere subito il sito con dati di esempio?** Il template include anche `sessions_demo.json` e 4 snapshot demo dentro `snapshots/`. Rinomina `sessions_demo.json` in `sessions.json` (sovrascrivendo quello vuoto) per provare subito la griglia popolata. Quando sei pronto a pubblicare le tue sessioni vere, cancella semplicemente `sessions_demo.json`, le 4 immagini demo, e riporta `sessions.json` a `[]`.
+
 ---
 
 ## Personalizzazione
@@ -116,7 +118,8 @@ SkyTruth-Windows-Site/
 ├── sessione.js           ← logica della pagina di dettaglio
 ├── config.js             ← UNICO file da personalizzare (vedi sopra)
 ├── sessions.json         ← dati di tutte le sessioni pubblicate ("database" del sito)
-├── snapshots/            ← immagini snapshot di ogni sessione
+├── sessions_demo.json    ← dati di esempio (facoltativo, vedi sopra "Installazione")
+├── snapshots/            ← immagini snapshot di ogni sessione (4 demo incluse)
 ├── LICENSE
 └── README.md             ← questo file
 ```
