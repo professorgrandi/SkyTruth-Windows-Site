@@ -1,1 +1,55 @@
-[]
+[
+  {
+    "id": 1,
+    "titolo": "Sessione 1",
+    "data_inizio": "2026-09-16T23:39:36",
+    "data_fine": "2026-09-17T00:17:46",
+    "aerei_ghost": 3,
+    "aerei_mainstream": 5,
+    "aerei_ghost_lista": [
+      {
+        "icao": "706071",
+        "callsign": "KAC135",
+        "altitudine": "37000"
+      },
+      {
+        "icao": "4CAE1E",
+        "callsign": "4CAE1E",
+        "altitudine": "34975"
+      },
+      {
+        "icao": "39C940",
+        "callsign": "39C940",
+        "altitudine": "35000"
+      }
+    ],
+    "aerei_mainstream_lista": [
+      {
+        "icao": "706071",
+        "callsign": "KAC135",
+        "altitudine": 11277.6
+      },
+      {
+        "icao": "4cae1e",
+        "callsign": "ITY810",
+        "altitudine": 10668
+      },
+      {
+        "icao": "39c940",
+        "callsign": "CRL632",
+        "altitudine": 10668
+      },
+      {
+        "icao": "48e9f0",
+        "callsign": "RYR79WH",
+        "altitudine": 10980.42
+      },
+      {
+        "icao": "4d208f",
+        "callsign": "WMT8341",
+        "altitudine": 10972.8
+      }
+    ],
+    "snapshot": "snapshots/snapshot_1.png"
+  }
+]
