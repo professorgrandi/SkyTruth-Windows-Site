@@ -51,5 +51,48 @@
       }
     ],
     "snapshot": "snapshots/snapshot_1.png"
+  },
+  {
+    "id": 2,
+    "titolo": "Sessione 2",
+    "data_inizio": "2026-09-17T17:23:30",
+    "data_fine": "2026-09-17T17:45:03",
+    "aerei_ghost": 3,
+    "aerei_mainstream": 3,
+    "aerei_ghost_lista": [
+      {
+        "icao": "4D2235",
+        "callsign": "RYR23YV",
+        "altitudine": "12525"
+      },
+      {
+        "icao": "3E557D",
+        "callsign": "FSE1D",
+        "altitudine": "13250"
+      },
+      {
+        "icao": "3006BA",
+        "callsign": "IMADE",
+        "altitudine": "2950"
+      }
+    ],
+    "aerei_mainstream_lista": [
+      {
+        "icao": "4d2235",
+        "callsign": "RYR23YV",
+        "altitudine": 3992.88
+      },
+      {
+        "icao": "3e557d",
+        "callsign": "FSE1D",
+        "altitudine": 3924.3
+      },
+      {
+        "icao": "896537",
+        "callsign": "ETD6XY",
+        "altitudine": 11163.3
+      }
+    ],
+    "snapshot": "snapshots/snapshot_2.png"
   }
 ]
