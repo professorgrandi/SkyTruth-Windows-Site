@@ -54,7 +54,7 @@
   },
   {
     "id": 2,
-    "titolo": "Sessione 2",
+    "titolo": "Sessione 2 (test)",
     "data_inizio": "2026-09-17T17:23:30",
     "data_fine": "2026-09-17T17:45:03",
     "aerei_ghost": 3,
