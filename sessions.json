@@ -868,5 +868,128 @@
       }
     ],
     "snapshot": "snapshots/snapshot_5.png"
+  },
+  {
+    "id": 6,
+    "titolo": "Sessione 6",
+    "data_inizio": "2026-09-19T16:54:46",
+    "data_fine": "2026-09-19T17:41:50",
+    "aerei_ghost": 10,
+    "aerei_mainstream": 12,
+    "aerei_ghost_lista": [
+      {
+        "icao": "4CAE1E",
+        "callsign": "ITY807",
+        "altitudine": "34000"
+      },
+      {
+        "icao": "46B823",
+        "callsign": "AEE65R",
+        "altitudine": "36000"
+      },
+      {
+        "icao": "7448A4",
+        "callsign": "RJA156",
+        "altitudine": "38475"
+      },
+      {
+        "icao": "39D304",
+        "callsign": "TVF89WM",
+        "altitudine": "37000"
+      },
+      {
+        "icao": "4CA61F",
+        "callsign": "RYR78PK",
+        "altitudine": "34000"
+      },
+      {
+        "icao": "4D242B",
+        "callsign": "4D242B",
+        "altitudine": "35975"
+      },
+      {
+        "icao": "4D2265",
+        "callsign": "RYR38AA",
+        "altitudine": "36000"
+      },
+      {
+        "icao": "4C01E0",
+        "callsign": "ASL95T",
+        "altitudine": "34050"
+      },
+      {
+        "icao": "4D2304",
+        "callsign": "RYR4QV",
+        "altitudine": "37000"
+      },
+      {
+        "icao": "4D226B",
+        "callsign": "RYR728P",
+        "altitudine": "14700"
+      }
+    ],
+    "aerei_mainstream_lista": [
+      {
+        "icao": "4cae1e",
+        "callsign": "ITY807",
+        "altitudine": 10363.2
+      },
+      {
+        "icao": "46b823",
+        "callsign": "AEE65R",
+        "altitudine": 10988.04
+      },
+      {
+        "icao": "7448a4",
+        "callsign": "RJA156",
+        "altitudine": 11727.18
+      },
+      {
+        "icao": "39d304",
+        "callsign": "TVF89WM",
+        "altitudine": 11277.6
+      },
+      {
+        "icao": "4ca61f",
+        "callsign": "RYR78PK",
+        "altitudine": 10363.2
+      },
+      {
+        "icao": "4d242b",
+        "callsign": "WMT3RN",
+        "altitudine": 10965.18
+      },
+      {
+        "icao": "4d2265",
+        "callsign": "RYR38AA",
+        "altitudine": 10972.8
+      },
+      {
+        "icao": "4c01e0",
+        "callsign": "ASL95T",
+        "altitudine": 10378.44
+      },
+      {
+        "icao": "06a0e4",
+        "callsign": "QTR31B",
+        "altitudine": 11887.2
+      },
+      {
+        "icao": "4d2304",
+        "callsign": "RYR4QV",
+        "altitudine": 11277.6
+      },
+      {
+        "icao": "490d0b",
+        "callsign": "NJE628R",
+        "altitudine": 12504.42
+      },
+      {
+        "icao": "4d226b",
+        "callsign": "RYR728P",
+        "altitudine": 4648.2
+      }
+    ],
+    "snapshot": "snapshots/snapshot_6.png"
   }
 ]
