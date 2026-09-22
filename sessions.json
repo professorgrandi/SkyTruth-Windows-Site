@@ -1529,5 +1529,58 @@
       }
     ],
     "snapshot": "snapshots/snapshot_7.png"
+  },
+  {
+    "id": 8,
+    "titolo": "Sessione 8",
+    "data_inizio": "2026-09-22T08:34:20",
+    "data_fine": "2026-09-22T08:55:26",
+    "aerei_ghost": 4,
+    "aerei_mainstream": 4,
+    "aerei_ghost_lista": [
+      {
+        "icao": "461F6D",
+        "callsign": "FIN6PT",
+        "altitudine": "37000"
+      },
+      {
+        "icao": "4D2382",
+        "callsign": "RYR7RN",
+        "altitudine": "41000"
+      },
+      {
+        "icao": "738065",
+        "callsign": "ELY223",
+        "altitudine": "38000"
+      },
+      {
+        "icao": "4D22B3",
+        "callsign": "RYR7946",
+        "altitudine": "38000"
+      }
+    ],
+    "aerei_mainstream_lista": [
+      {
+        "icao": "461f6d",
+        "callsign": "FIN6PT",
+        "altitudine": 11269.98
+      },
+      {
+        "icao": "4d2382",
+        "callsign": "RYR7RN",
+        "altitudine": 12496.8
+      },
+      {
+        "icao": "738065",
+        "callsign": "ELY223",
+        "altitudine": 11582.4
+      },
+      {
+        "icao": "4d22b3",
+        "callsign": "RYR7946",
+        "altitudine": 11582.4
+      }
+    ],
+    "snapshot": "snapshots/snapshot_8.png"
   }
 ]
